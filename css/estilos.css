@@ -1,0 +1,240 @@
+/* Estilo para el contenido del body */
+body, .theme1 {
+    background-color: rgb(255, 239, 205);
+    color: black;
+    width: 100%;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+
+/* Agrega color y estilo al header */
+header{
+    background: rgb(207, 200, 164);
+    background-position: center;
+    max-height: 750px;
+    border-radius: 20px;
+}
+
+/* Agrega color y estilo al footer */
+footer {
+    background: rgb(207, 200, 164);
+    background-position: center;
+    max-height: 750px;
+    border-radius: 20px;
+}
+
+/* Agrega estilo a la foto */
+#container-image img {
+    border: 10px;
+    box-shadow: 6px 6px 20px gray;
+    max-width: 100%;
+    vertical-align: top;
+    width: 200px;
+    margin: auto;
+}
+
+/* Ubica una caja div al lado de la otra */
+.name, #container-image {
+    display: inline-block;
+}
+
+/* Agrega estilos a las cajas div para que se vean como botones */
+.button {
+    border: 3px solid gray;
+    border-radius: 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Agrega estilos a la caja div de descarga para que se vea como botón */
+.button-1 {
+    border: 3px solid gray;
+    border-radius: 22px;
+    margin-top: 20px;
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    float: right;
+    margin-bottom: 50px;
+}
+
+/* Agrega estilo a los h1 */
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    color: gray;
+    margin-left: 20px;
+}
+
+/* Agrega estilo a los h3 */
+h3 {
+    font-weight: bold;
+    color: olive;
+}
+
+/* Posicionamiento */
+#margin, p {
+    margin-left: 20px;
+}
+/* Agrega estilo al texto "Hoja de Vida" en footer */
+#footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    color: gray;
+    text-shadow: 2px 4px 6px gray;
+    margin-left: 20px;
+}
+
+/* Agrega estilo a los títulos principales que están antes de la primera línea horizontal */
+#main {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    color: gray;
+    text-shadow: 2px 4px 6px gray;
+    margin-left: 20px;
+}
+
+/* Estilo de el nombre */
+.name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    color: olive;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 70px;
+    text-align: justify;
+}
+
+/* Agrega estilo a los links */
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Cambia el color de la letra al pasar por encima el cursor */
+a:hover {
+    color: blue;
+}
+
+/* Cambia el tipo de cursor y el color de fondo al pasar por encima el cursor */
+.button:hover {
+    background-color: beige;
+    cursor: pointer;
+    color: blue;
+}
+
+/* Anñadir estilo a los botones cuando da click*/
+.button:active { 
+    padding: 3px; 
+    background: rgb(208, 202, 188); 
+    color: white; 
+} 
+
+/* Cambia el tipo de cursor y el color de fondo al pasar por encima el cursor en el botón de descargar*/
+.button-1:hover {
+    background-color: beige;
+    cursor: pointer;
+}
+
+/* Cambia el estilo de los titulos con este id */
+#tittle {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: olive;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+/* Agrega estilo a las líneas horizontales */
+hr {
+    border-width: 1px;
+    border-color: darkslategray;
+}
+
+/* Agrega estilo al acordeon*/
+.acordeon {
+    width: 800px;
+    margin: 10px auto;
+    color: black;
+    background-color: rgb(248, 219, 176);
+    padding: 45px 45px;
+  }
+
+/* Ubicación del contenedor */
+.acordeon .container-1 {
+    position: relative;
+    margin: 10px 10px;
+  }
+
+/* Posiciona las etiquetas en relación con el contenedor */
+.acordeon .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+
+  /* Posiciona el signo más */
+.acordeon .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+
+  /* Oculta el contenido, añade estilo a la fuente y la transición */
+.acordeon .content {
+    position: relative;
+    background: beige;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 1s;
+    border: 1px dashed grey;
+    border-radius: 20px;
+  }
+
+/* Añade y da estilo a la línea horizontal entre los contenidos */
+.acordeon hr {
+    width: 300;
+    margin-left: 0;
+    border: 1px solid grey;
+  }
+
+/* Muestra la parte de contenido cuando está activa */
+.acordeon .container-1.activa .content {
+    height: 200px;
+  }
+  
+/* Cambia de signo positivo a negativo una vez activado */
+.acordeon .container-1.activa .label::before {
+    content: '-';
+    font-size: 30px;
+  }
+
+select {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    font-family: inherit;
+    color: var(--text-color);
+    border-radius: 0.25rem;
+    margin-right: 20px;
+    float: right;
+  }
